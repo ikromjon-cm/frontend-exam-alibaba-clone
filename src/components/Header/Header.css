@@ -1,0 +1,145 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.header-banner {
+  background: linear-gradient(90deg, #9ef1e4 0%, #6ad1ea 34%, #2375cd 100%);
+}
+
+.header-bar {
+  width: min(1280px, calc(100% - 32px));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  color: #0d2547;
+}
+
+.header-branding {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.header-branding strong {
+  font-size: 13px;
+}
+
+.header-button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.9);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header-button:hover:not(:disabled) {
+  background: rgba(17, 24, 39, 0.95);
+}
+
+.header-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.header-main {
+  width: 100%;
+  background: #ffffff;
+}
+
+.header-layout {
+  width: min(1280px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 0;
+}
+
+.header-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-weight: 800;
+}
+
+.brand-mark {
+  font-size: 30px;
+}
+
+.brand-suffix {
+  font-size: 22px;
+  color: var(--brand);
+}
+
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-region {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.header-region strong {
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.header-pill,
+.header-link,
+.header-cta {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  background: #f8f8f8;
+  color: #1f2937;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header-pill:hover:not(:disabled),
+.header-link:hover:not(:disabled),
+.header-cta:hover:not(:disabled) {
+  background: #f3f4f6;
+}
+
+.header-pill:disabled,
+.header-link:disabled,
+.header-cta:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.header-link {
+  background: transparent;
+  text-decoration: underline;
+}
+
+.header-cta {
+  background: var(--brand);
+  color: #ffffff;
+}
