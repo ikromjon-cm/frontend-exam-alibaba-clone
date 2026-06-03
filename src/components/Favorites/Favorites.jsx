@@ -13,7 +13,6 @@ export default function Favorites() {
   if (!favoritesOpen) return null
 
   return (
-    // go
     <div className="favorites-overlay" onClick={() => dispatch(closeFavorites())}>
       <aside className="favorites-panel" onClick={event => event.stopPropagation()}>
         <div className="favorites-header">
