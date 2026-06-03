@@ -118,7 +118,7 @@ export default function CategoryExplorer() {
             <div className="category-explorer-main-footer">
               <div className="category-explorer-footer-headline">
                 <h3>Apparel & Accessories</h3>
-                <p>Explore related categories and products in one place.</p>
+                <p>Explore realated</p>
               </div>
               <div className="category-explorer-footer-links">
                 {quickCategoryLinks.map(link => (
